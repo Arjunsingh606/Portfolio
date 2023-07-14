@@ -1,0 +1,16 @@
+.about-main{
+    width: 100%;
+}
+
+.about-main h2{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+
+.about-para{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 650px;
+}
