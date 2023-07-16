@@ -1,53 +1,34 @@
-import React, {useState} from "react";
+
+import React, { useState } from "react";
 import "../Styles/skills.css";
 import { SkillSet } from "./SkillData";
 
-
 const Skills = () => {
+  const [skills, setSkills] = useState(SkillSet);
 
-  const [skill, setSkill] = useState(SkillSet);
-
-const UpdateSkills = (e)=>{
-  setSkill(e.taregt.value)
-}
-
+  const updateSkills = (e) => {
+    setSkills(e.target.value);
+  };
 
   return (
-    <>
-      <div className="skills">
-        <h2><i className="bi bi-code-slash"></i>&nbsp;Skill & <span style={{color:"yellow"}}>Ability</span></h2>
-
-      {
-        skill.map(element=>{
-          return (
-            <div className="card-wrapper">
-              <div className="cardSkill" onChange={()=>UpdateSkills}>
-            <img
-              src={element.link}
-              className="card-img-top"
-              alt="react"
-            />
-            <div className="card-body">
-              <h3 className="title">{element.title}</h3>
+    <div className="skills">
+      <h2>
+        <i className="bi bi-code-slash"></i>&nbsp;Skill &{" "}
+        <span style={{ color: "#6F11F5" }}>Ability</span>
+      </h2>
+      <div className="skills-container">
+        {skills.map((element, index) => (
+          <div className="card-wrapper" key={index}>
+            <div className="cardSkill" onChange={updateSkills}>
+              <img src={element.link} className="card-img-top" alt={element.title} />
+              <div className="card-body">
+                <h3 className="Skilltitle">{element.title}</h3>
+              </div>
             </div>
           </div>
-        
-          
-        </div>
-          )
-
-        }
-        
-        
-        )
-
-        
-      }
-      
-
-        
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

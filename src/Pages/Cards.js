@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/projects.css";
-import { useState } from "react";
 
-const Card = ({ image, description, github, shortdescription ,title}) => {
+const Card = ({ image, description, github, shortdescription, title }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,12 +22,12 @@ const Card = ({ image, description, github, shortdescription ,title}) => {
         >
           <div className="card-front">
             <img src={image} alt="Card" />
-            <div className="projectDescription">{title}</div>
+            <div className="projectTitle">{title}</div>
           </div>
           <div className="card-back">
-            <span>{shortdescription}</span>
-            <div className="projectDescription">{description}</div>
-            <button class="btnproject"> code</button>
+            <div className="projectShortDesc">{shortdescription}</div>
+            <div className="projectDesc">{description}</div>
+            <a href={github} target="_blank" rel="noopener noreferrer" className="btnproject">Code</a>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const projectHeading={
   return (
     <div className="app" style={projectMain}>
       <h2 style={projectHeading}><i className="bi bi-code-slash"></i>&nbsp;Project <span style={{color:"#FFE600"}}>Made</span></h2>
-      <div className="card-container">
+      <div style={{display:"flex"}} className="card-container">
         <Cards
           image="/images/edc.jpg"
           title="Reactjs project"

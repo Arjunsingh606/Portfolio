@@ -16,7 +16,7 @@
     /* margin: 0px 150px; */
     
 }
-.contentImage{
+.contactImage{
     display: flex;
     /* align-items: center; */
     /* background-color: white; */
@@ -27,7 +27,7 @@
     margin-bottom: -135px;
     margin-top: -70px;
   }
-.contentImage img{
+.contactImage img{
       height: 300px;
       width: 300px;
 }

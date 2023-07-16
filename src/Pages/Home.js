@@ -10,9 +10,9 @@ const Home = () => {
           <div className="col-md-6 ">
               <div className="mainTitle">
                 
-                <h3 className="title">Hi There</h3>
-                <h3 className="title">I'm Ajun singh</h3>
-                <h4 className="title">Frontend Developer</h4>
+                <h3 className="hometitle">Hi There</h3>
+                <h3 className="hometitle">I'm Ajun singh</h3>
+                <h4 className="hometitle">Frontend Developer</h4>
                 <button id="btnresume" className="title">Resume</button> 
               </div>
               <div className="SocialIcon">

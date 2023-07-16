@@ -27,7 +27,7 @@ const Contact = () => {
       <div className="MainContent">
         <h2 className="getInTouch"> <i class="bi bi-headset"></i> Get in <span style={{color:"#7303A7"}}>Touch</span></h2>
         <div className="getContent">
-          <div className="contentImage">
+          <div className="contactImage">
             <img src="/images/contact.png" alt="loading" />
           </div>
           <div className="formik">
