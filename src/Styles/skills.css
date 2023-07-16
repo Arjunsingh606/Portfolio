@@ -23,7 +23,7 @@
     
 }
 
-.card{
+.cardSkill{
     flex-basis: calc(18% - -9px);
     background-color: #05001F;
     height: 150px;

@@ -21,7 +21,7 @@ const UpdateSkills = (e)=>{
         skill.map(element=>{
           return (
             <div className="card-wrapper">
-              <div className="card" onChsnge={()=>UpdateSkills}>
+              <div className="cardSkill" onChange={()=>UpdateSkills}>
             <img
               src={element.link}
               className="card-img-top"
