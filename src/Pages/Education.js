@@ -26,11 +26,11 @@ const Education = () => {
 
   return (
     <div className="MainEducation">
-      <h2 className="getInTouch">
+      <h2 className="EducationCertification">
         <i className="bi bi-mortarboard"></i>&nbsp;My Education &{" "}
-        <span style={{ color: "#7303A7" }}> Certifications</span>
+        <span style={{ color: "#ffffff" }}> Certifications</span>
       </h2>
-      <p style={{ color: "black" }}>
+      <p style={{ color: "#ffffff" }}>
         Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
       </p>
       <div className="contentImage">

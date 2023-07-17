@@ -1,12 +1,16 @@
 /* MainEducation component styles */
 .MainEducation {
-    margin-top: 40px;
-    text-align: center;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #474242;
   }
   
-  .getInTouch {
+  .EducationCertification {
     font-size: 28px;
     margin-bottom: 10px;
+    text-align: center;
+    color: #fb2828;
+    padding-top: 30px;
   }
   
   .contentImage {
@@ -57,7 +61,28 @@
   }
   
   .educationTime {
-    color: #888;
-    font-size: 14px;
+    
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
   }
   
+
+
+  @media (max-width: 768px) {
+    .educationTitle {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .educationDescription {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  .educationContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  }  

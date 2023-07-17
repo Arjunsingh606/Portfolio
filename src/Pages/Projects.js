@@ -9,12 +9,14 @@ const projectMain = {
   height:"500px"
 }
 const projectHeading={
-  paddingTop: "10px",
-  fontWeight: "700"
+  paddingTop: "17px",
+  fontWeight: "700",
+  textAlign: "center",
+  color:"white"
 }
 
   return (
-    <div className="app" style={projectMain}>
+    <div className="mainprojectCards" style={projectMain}>
       <h2 style={projectHeading}><i className="bi bi-code-slash"></i>&nbsp;Project <span style={{color:"#FFE600"}}>Made</span></h2>
       <div style={{display:"flex"}} className="card-container">
         <Cards

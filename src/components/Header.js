@@ -22,6 +22,11 @@ function Header() {
           </li>
           <li>
             <Link className="nav-link text-white" to="/projects">Projects</Link>
+
+          </li>
+          <li>
+            <Link className="nav-link text-white" to="/experince">Experince</Link>
+            
           </li>
           <li>
             <Link className="nav-link text-white" to="/Education">Education</Link>
