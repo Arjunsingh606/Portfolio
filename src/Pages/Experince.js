@@ -4,19 +4,19 @@ import '../Styles/experince.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Junior Developer',
-      company: 'ABC Company',
-      duration: 'Jan 2020 - Dec 2020',
+      title: 'Frontend Developer',
+      company: 'Horizon Tech India ',
+      duration: 'May 2023 - present',
     },
     {
-      title: 'Software Engineer',
-      company: 'XYZ Solutions',
-      duration: 'Jan 2021 - Present',
+      title: 'Junior Frontend Developer',
+      company: 'Stirring Minds/Careerguide.com',
+      duration: 'oct 2021 - March 2023',
     },
     {
-      title: 'Senior Developer',
-      company: '123 Tech',
-      duration: 'Jan 2022 - Future',
+      title: 'Web developer Internship',
+      company: 'Stirring Minds/Careerguide.com',
+      duration: 'July 2022 - Oct 2023',
     },
   ];
 

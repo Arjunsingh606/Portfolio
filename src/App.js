@@ -8,6 +8,7 @@ import Skills from './Pages/Skills'
 import Contact from './Pages/Contact'
 import About from './Pages/About';
 import Education from './Pages/Education';
+import Experince from './Pages/Experince';
 
 function App() {
   
@@ -20,7 +21,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/experince" component={Experince} />
         <Route path="/education" component={Education} />
         <Route path="/contact" component={Contact} />
       </Switch>

@@ -1,59 +1,109 @@
 .roadmap-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .roadmap-heading {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .roadmap-timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 40px 0;
-    width: 2px;
-    background-color: #ccc;
-  }
-  
-  .roadmap-item {
-    position: relative;
-    margin-bottom: 40px;
-  }
-  
-  .roadmap-dot {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #7303a7;
-  }
-  
-  .roadmap-content {
-    margin-left: 30px;
-    padding-left: 20px;
-    border-left: 2px solid #ccc;
-  }
-  
-  .roadmap-title {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .roadmap-company {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
-  }
-  
-  .roadmap-duration {
-    font-size: 14px;
-    color: #888;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.roadmap-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.roadmap-timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.roadmap-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.roadmap-dot {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7303a7;
+}
+
+.roadmap-content {
+  margin-left: 30px;
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+  background-color: #7303a7;
+  width: 300px;
+  color: white;
+}
+
+.roadmap-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.roadmap-company {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.roadmap-duration {
+  font-size: 14px;
+  color: #888;
+}
+
+/* ///////////// */
+/* Keep the existing styles for .roadmap-container, .roadmap-heading, .roadmap-timeline, .roadmap-dot, .roadmap-content, .roadmap-title, .roadmap-company, and .roadmap-duration */
+
+/* Reset margin for all .roadmap-item elements */
+.roadmap-item {
+  margin-bottom: 40px;
+}
+
+/* Apply styles for odd .roadmap-item elements (1st, 3rd, 5th, etc.) */
+.roadmap-item:nth-child(odd) .roadmap-dot {
+  left: -10px;
+  background-color: #7303a7;
+}
+
+.roadmap-item:nth-child(odd) .roadmap-content {
+  margin-left: 30px;
+  border-left: 2px solid #ccc;
+  background-color: #7303a7;
+}
+
+/* Apply styles for even .roadmap-item elements (2nd, 4th, 6th, etc.) */
+.roadmap-item:nth-child(even) .roadmap-dot {
+  left: auto;
+  right: -10px;
+  background-color: #7303a7;
+}
+
+.roadmap-item:nth-child(even) .roadmap-content {
+  margin-left: auto;
+  margin-right: 30px;
+  border-left: none;
+  border-right: 2px solid #ccc;
+  background-color: #7303a7;
+}
+
+/* Ensure the text is left-aligned for odd items and right-aligned for even items */
+.roadmap-item:nth-child(odd) .roadmap-title,
+.roadmap-item:nth-child(odd) .roadmap-company,
+.roadmap-item:nth-child(odd) .roadmap-duration {
+  text-align: left;
+}
+
+.roadmap-item:nth-child(even) .roadmap-title,
+.roadmap-item:nth-child(even) .roadmap-company,
+.roadmap-item:nth-child(even) .roadmap-duration {
+  text-align: right;
+}

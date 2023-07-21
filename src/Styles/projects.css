@@ -3,9 +3,6 @@
   
 }
 
-
-
-
 .project {
   display: flex;
   justify-content: center;
@@ -39,6 +36,9 @@
 
 .card-back {
   transform: rotateY(180deg);
+  background-color: #204ECF;
+  color: white;
+  font-size: 18px;
 }
 
 .card.flipped .card-front {
@@ -63,15 +63,16 @@
 
 .projectShortDesc {
   margin-bottom: 15px;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 16px;
   text-align: center;
 }
 
 .projectDesc {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
+  color: rgb(255, 247, 0);
 }
 
 .btnproject {
